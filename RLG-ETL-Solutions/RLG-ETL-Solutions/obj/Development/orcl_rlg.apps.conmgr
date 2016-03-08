@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="orcl_rlg.apps"
+  DTS:DTSID="{BD75C8D0-20DE-41A7-83D6-36CF1D9BCFA2}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=orcl_rlg;User ID=apps;Provider=OraOLEDB.Oracle.1;Persist Security Info=True;Locale Identifier=874;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAHTllC7ydD0O9G9fpuFjpuQAAAAACAAAAAAADZgAAwAAAABAAAAAb0kNpYBB7Qbn3tL25FsHJAAAAAASAAACgAAAAEAAAALOXPOtr7r8VEncVU8zxSdJwAAAA1g0Ax0Dh1tvN8aPuKHxwGyGEsLqIHw74Vx9Kp0NQY6Y9Ra9/C08Z26r5siXfJtghAClhkZvszlStdw6AaFh/oloZRYx4yTI3cK+T88vAv8M9sC3xOmuVBT6qGpVdj6CJHFRIzPRpxIewXQW3w00UWBQAAABvkxgcNsZPMCawlgQpbCbopGfV5Q==</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

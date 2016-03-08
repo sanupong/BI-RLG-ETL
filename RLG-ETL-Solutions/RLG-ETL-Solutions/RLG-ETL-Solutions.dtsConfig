@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+  <DTSConfiguration>
+     <DTSConfigurationHeading>
+       <DTSConfigurationFileInfo GeneratedBy="WIN-9O51BKRO5MP\Pirat" GeneratedFromPackageName="TemplatePackage" GeneratedFromPackageID="{27AE6EF7-406E-4D1D-A2FF-80C9C57E6B94}" GeneratedDate="5/8/2013 12:34:29 PM"/>
+     </DTSConfigurationHeading>
+    <Configuration ConfiguredType="Property" Path="\Package.Connections[SQL_RLGDWH].Properties[ConnectionString]" ValueType="String">
+      <ConfiguredValue>Data Source=BI-SERVER;Initial Catalog=RLGDWH;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;</ConfiguredValue>
+    </Configuration>
+  </DTSConfiguration>

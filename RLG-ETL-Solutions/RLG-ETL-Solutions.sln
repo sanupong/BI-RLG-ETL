@@ -1,0 +1,17 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "RLG-ETL-Solutions", "RLG-ETL-Solutions\RLG-ETL-Solutions.dtproj", "{BCC4CB50-B73C-431B-9685-730E17322E56}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCC4CB50-B73C-431B-9685-730E17322E56}.Development|Default.ActiveCfg = Development
+		{BCC4CB50-B73C-431B-9685-730E17322E56}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
