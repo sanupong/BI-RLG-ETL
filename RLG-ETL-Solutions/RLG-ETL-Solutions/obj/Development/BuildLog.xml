@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>RLG-ETL-Solutions</Name>
-    <LastWriteTime>2015-10-21T13:28:39.1179642Z</LastWriteTime>
+    <LastWriteTime>2016-03-15T06:47:57.2162493Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -113,7 +113,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DimCustomer.dtsx</Name>
-      <LastWriteTime>2015-10-21T12:48:27.3189642Z</LastWriteTime>
+      <LastWriteTime>2016-03-15T06:38:09.1160957Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -178,7 +178,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>MasterPackageFinance.dtsx</Name>
-      <LastWriteTime>2015-11-10T14:43:04.493585Z</LastWriteTime>
+      <LastWriteTime>2016-03-15T06:41:31.6246174Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

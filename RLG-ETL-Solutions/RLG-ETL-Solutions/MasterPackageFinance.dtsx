@@ -12,8 +12,8 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="MasterPackageFinance"
   DTS:PackageType="5"
-  DTS:VersionBuild="393"
-  DTS:VersionGUID="{5F50AE62-4923-4C9C-ACAC-2599C5657209}">
+  DTS:VersionBuild="395"
+  DTS:VersionGUID="{E5C9D3B9-5CBE-4A60-81A1-94A84D9183C5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7247,7 +7247,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20000101,20151231</DTS:VariableValue>
+        DTS:DataType="8">20150211,20160304</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
