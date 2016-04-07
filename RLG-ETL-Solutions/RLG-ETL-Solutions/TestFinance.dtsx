@@ -12,8 +12,9 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="TestFinance"
   DTS:PackageType="5"
-  DTS:VersionBuild="234"
-  DTS:VersionGUID="{F4B4BA83-ADE0-4ACD-A87F-DE14AD161F3E}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="235"
+  DTS:VersionGUID="{EE962FD4-ED13-4FCE-A111-E2AED6354C02}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -1975,7 +1976,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20120101,20150322</DTS:VariableValue>
+        DTS:DataType="8">20160329,20160328</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -3552,7 +3553,7 @@ where [refTable].[AccountCode] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output2]"
+              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task\Lookup 1 1.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup 1.Outputs[Lookup Match Output]" />
@@ -3562,7 +3563,7 @@ where [refTable].[AccountCode] = ?</property>
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Lookup Match Output]"
+              refId="Package\Data Flow Task.Paths[Lookup Match Output2]"
               endId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task\Lookup 1 1.Outputs[Lookup Match Output]" />
@@ -5018,7 +5019,7 @@ where [refTable].[AccountCode] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task 1.Paths[Lookup Match Output2]"
+              refId="Package\Data Flow Task 1.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task 1\Lookup 1.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task 1\Lookup 1 1.Outputs[Lookup Match Output]" />
@@ -5028,7 +5029,7 @@ where [refTable].[AccountCode] = ?</property>
               name="Lookup Match Output"
               startId="Package\Data Flow Task 1\Lookup 1.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task 1.Paths[Lookup Match Output]"
+              refId="Package\Data Flow Task 1.Paths[Lookup Match Output2]"
               endId="Package\Data Flow Task 1\Lookup 1 1.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task 1\Lookup.Outputs[Lookup Match Output]" />
@@ -6341,12 +6342,12 @@ where [refTable].[AccountCode] = ?</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task 1 1.Paths[Lookup Match Output1]"
+              refId="Package\Data Flow Task 1 1.Paths[Lookup Match Output]"
               endId="Package\Data Flow Task 1 1\Lookup 1 1.Inputs[Lookup Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task 1 1\Lookup.Outputs[Lookup Match Output]" />
             <path
-              refId="Package\Data Flow Task 1 1.Paths[Lookup Match Output]"
+              refId="Package\Data Flow Task 1 1.Paths[Lookup Match Output1]"
               endId="Package\Data Flow Task 1 1\OLE DB Command.Inputs[OLE DB Command Input]"
               name="Lookup Match Output"
               startId="Package\Data Flow Task 1 1\Lookup 1 1.Outputs[Lookup Match Output]" />
@@ -6524,7 +6525,7 @@ where [refTable].[AccountCode] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
+          Id="Package\Data Flow Task.Paths[Lookup Match Output2]"
           TopLeft="323.5,374">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6596,7 +6597,7 @@ where [refTable].[AccountCode] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Lookup Match Output2]"
+          Id="Package\Data Flow Task.Paths[Lookup Match Output]"
           TopLeft="322.75,304">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6729,7 +6730,7 @@ where [refTable].[AccountCode] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Lookup Match Output]"
+          Id="Package\Data Flow Task 1.Paths[Lookup Match Output2]"
           TopLeft="313,217">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6777,7 +6778,7 @@ where [refTable].[AccountCode] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1.Paths[Lookup Match Output2]"
+          Id="Package\Data Flow Task 1.Paths[Lookup Match Output]"
           TopLeft="313.25,282">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6893,7 +6894,7 @@ where [refTable].[AccountCode] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1 1.Paths[Lookup Match Output1]"
+          Id="Package\Data Flow Task 1 1.Paths[Lookup Match Output]"
           TopLeft="313,217">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -6917,7 +6918,7 @@ where [refTable].[AccountCode] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task 1 1.Paths[Lookup Match Output]"
+          Id="Package\Data Flow Task 1 1.Paths[Lookup Match Output1]"
           TopLeft="315.25,282">
           <EdgeLayout.Curve>
             <mssgle:Curve

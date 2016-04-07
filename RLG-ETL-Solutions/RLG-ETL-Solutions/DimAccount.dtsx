@@ -12,8 +12,9 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="DimAccount"
   DTS:PackageType="5"
-  DTS:VersionBuild="120"
-  DTS:VersionGUID="{BB347185-0CAE-4FC6-BDDB-7631FFF64266}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="121"
+  DTS:VersionGUID="{4765C358-5540-4F72-BFA7-D5D1F8D322E1}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -84,7 +85,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20000619,20131231</DTS:VariableValue>
+        DTS:DataType="8">20160329,20160328</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -2221,17 +2222,17 @@ Where Convert(varchar(8), LAST_UPDATE_DATE, 112) Between '20130101' And  '201312
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
               endId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output1]"
               endId="Package\Data Flow Task\Insert Destination.Inputs[OLE DB Destination Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
               endId="Package\Data Flow Task\SCD DimAccount.Inputs[Slowly Changing Dimension Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\DER AuditKey, UpdateDate.Outputs[Derived Column Output]" />
@@ -2256,12 +2257,12 @@ Where Convert(varchar(8), LAST_UPDATE_DATE, 112) Between '20130101' And  '201312
               name="OLE DB Source Output"
               startId="Package\Data Flow Task\OLEDB_SRC Staging.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Row Count Output 11]"
+              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
               endId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
               name="Row Count Output 1"
               startId="Package\Data Flow Task\RC RowInsert.Outputs[Row Count Output 1]" />
             <path
-              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
+              refId="Package\Data Flow Task.Paths[Row Count Output 11]"
               endId="Package\Data Flow Task\DER AuditKey, UpdateDate.Inputs[Derived Column Input]"
               name="Row Count Output 1"
               startId="Package\Data Flow Task\RC RowSource.Outputs[Row Count Output 1]" />
@@ -3153,7 +3154,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           Id="Package\Data Flow Task\RC RowInsert"
           TopLeft="309,493.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          Id="Package\Data Flow Task.Paths[Derived Column Output2]"
           TopLeft="267.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3175,7 +3176,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
+          Id="Package\Data Flow Task.Paths[Row Count Output 11]"
           TopLeft="267.5,149.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3263,7 +3264,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           Id="Package\Data Flow Task\OLE DB Command"
           TopLeft="38.5,515.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
           TopLeft="125.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3319,7 +3320,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           Id="Package\Data Flow Task\Insert Destination"
           TopLeft="185,821.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output2]"
+          Id="Package\Data Flow Task.Paths[Derived Column Output1]"
           TopLeft="267.5,761.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3377,7 +3378,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Row Count Output 11]"
+          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
           TopLeft="381.5,535.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -3469,6 +3470,19 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Insert Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\OLEDB_SRC Staging">
     <Properties>
@@ -3643,19 +3657,6 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Insert Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>

@@ -12,8 +12,9 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="DimCustomer"
   DTS:PackageType="5"
-  DTS:VersionBuild="157"
-  DTS:VersionGUID="{2B12F7BE-76C9-4BC6-87B8-2041B446A2E4}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="158"
+  DTS:VersionGUID="{03EB4569-D4CF-4D7B-8E75-2AF0180769AC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -36,9 +37,8 @@
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=192.168.15.21;User ID=crmuserbi;Initial Catalog=RLG_CRM_APP;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;user=crmuserbi;">
           <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMqace9n5JEu/eL9gA7LGJAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAACQA/8oA5kasDvVzS2Ehv9vAAAAAASAAACgAAAAEAAAAEcqTQZlPLLHI837Y1DRafwYAAAAwWrKLRMd1pna9KSc0j4QzZaKZ/dmzwMWFAAAAFw+5nbiiWCpluKAcKgRe2CU5RKe</DTS:Password>
+            DTS:Name="Pwd"
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -51,9 +51,8 @@
         <DTS:ConnectionManager
           DTS:ConnectionString="Data Source=192.168.15.21;User ID=crmuserbi;Initial Catalog=RLG_CRM_SYS;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;user=crmuserbi;">
           <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMqace9n5JEu/eL9gA7LGJAAAAAAIAAAARABUAFMAAAADZgAAwAAAABAAAADZzLQPkV8viFfSocLmyLBcAAAAAASAAACgAAAAEAAAAGNgZHpfNfHd8Y1Re5UF3YYYAAAAJxdW3ON2UXxGeGkeFLxC1y/zsWZPIpo+FAAAAGPZpueOqkQtLLImTbvA5TbjCqM4</DTS:Password>
+            DTS:Name="Pwd"
+            Sensitive="1"></DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -126,7 +125,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20150211,20160304</DTS:VariableValue>
+        DTS:DataType="8">20160329,20160328</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""

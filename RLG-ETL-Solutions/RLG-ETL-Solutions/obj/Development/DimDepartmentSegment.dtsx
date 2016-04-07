@@ -12,8 +12,9 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="DimDepartmentSegment"
   DTS:PackageType="5"
-  DTS:VersionBuild="119"
-  DTS:VersionGUID="{3510E228-671B-4F63-A08B-EE7C7C034E6F}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="120"
+  DTS:VersionGUID="{90AB82C1-8186-42B7-AC61-E47B439617E4}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -84,7 +85,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20000619,20131231</DTS:VariableValue>
+        DTS:DataType="8">20160329,20160328</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -120,7 +121,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="LogPath">
       <DTS:VariableValue
-        DTS:DataType="8">D:\Log\RLG-Staging\</DTS:VariableValue>
+        DTS:DataType="8">D:\Log\RLG-ETL\</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1858,20 +1859,20 @@ Where Convert(varchar(8), LAST_UPDATE_DATE, 112) Between '20130101' And  '201312
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
-              endId="Package\Data Flow Task\SCD DimDepartmentSegment.Inputs[Slowly Changing Dimension Input]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              endId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task\DER AuditKey, UpdateDate.Outputs[Derived Column Output]" />
+              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Derived Column Output1]"
               endId="Package\Data Flow Task\Insert Destination.Inputs[OLE DB Destination Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
-              endId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
+              endId="Package\Data Flow Task\SCD DimDepartmentSegment.Inputs[Slowly Changing Dimension Input]"
               name="Derived Column Output"
-              startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
+              startId="Package\Data Flow Task\DER AuditKey, UpdateDate.Outputs[Derived Column Output]" />
             <path
               refId="Package\Data Flow Task.Paths[Historical Attribute Inserts Output]"
               endId="Package\Data Flow Task\Derived Column.Inputs[Derived Column Input]"
@@ -1893,20 +1894,20 @@ Where Convert(varchar(8), LAST_UPDATE_DATE, 112) Between '20130101' And  '201312
               name="OLE DB Source Output"
               startId="Package\Data Flow Task\OLEDB_SRC Staging.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Row Count Output 12]"
-              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
+              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
               name="Row Count Output 1"
-              startId="Package\Data Flow Task\RC RowUpdate.Outputs[Row Count Output 1]" />
+              startId="Package\Data Flow Task\RC RowInsert.Outputs[Row Count Output 1]" />
             <path
               refId="Package\Data Flow Task.Paths[Row Count Output 11]"
               endId="Package\Data Flow Task\DER AuditKey, UpdateDate.Inputs[Derived Column Input]"
               name="Row Count Output 1"
               startId="Package\Data Flow Task\RC RowSource.Outputs[Row Count Output 1]" />
             <path
-              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
-              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
+              refId="Package\Data Flow Task.Paths[Row Count Output 12]"
+              endId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
               name="Row Count Output 1"
-              startId="Package\Data Flow Task\RC RowInsert.Outputs[Row Count Output 1]" />
+              startId="Package\Data Flow Task\RC RowUpdate.Outputs[Row Count Output 1]" />
             <path
               refId="Package\Data Flow Task.Paths[Union All Output 1]"
               endId="Package\Data Flow Task\Derived Column 1.Inputs[Derived Column Input]"

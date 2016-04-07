@@ -12,8 +12,9 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="DimBusinessCluster"
   DTS:PackageType="5"
-  DTS:VersionBuild="137"
-  DTS:VersionGUID="{01A27A0E-0830-4F26-94CE-564B12565AA6}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="138"
+  DTS:VersionGUID="{97F45549-5268-4F8A-80F1-165C95A64D40}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -94,7 +95,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20100101,20151231</DTS:VariableValue>
+        DTS:DataType="8">20160329,20160328</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -2107,15 +2108,15 @@ Where Convert(varchar(8), a.LAST_UPDATE_DATE, 112) Between '20130101' And  '2013
               name="Excel Source Output"
               startId="Package\Data Flow Task\Excel Source.Outputs[Excel Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Row Count Output 11]"
-              endId="Package\Data Flow Task\DER AuditKey, UpdateDate.Inputs[Derived Column Input]"
-              name="Row Count Output 1"
-              startId="Package\Data Flow Task\RC RowSource.Outputs[Row Count Output 1]" />
-            <path
               refId="Package\Data Flow Task.Paths[Row Count Output 1]"
               endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Row Count Output 1"
               startId="Package\Data Flow Task\RC RowInsert.Outputs[Row Count Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Row Count Output 11]"
+              endId="Package\Data Flow Task\DER AuditKey, UpdateDate.Inputs[Derived Column Input]"
+              name="Row Count Output 1"
+              startId="Package\Data Flow Task\RC RowSource.Outputs[Row Count Output 1]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
@@ -2197,7 +2198,7 @@ where [refTable].[BusinessGroup] = ?</property>
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\DFT Insert Record BUGroupCenterFlag Temp\3414:invalid};</property>
+                  name="ParameterMap">#{Package\DFT Insert Record BUGroupCenterFlag Temp\11129:invalid};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."

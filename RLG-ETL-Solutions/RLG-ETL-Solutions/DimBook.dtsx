@@ -12,8 +12,9 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="DimBook"
   DTS:PackageType="5"
-  DTS:VersionBuild="154"
-  DTS:VersionGUID="{6F06E60E-B619-4F59-8E81-B8BDBF4F1C82}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="155"
+  DTS:VersionGUID="{3865EA78-D760-441E-BBF1-9F53756B7A30}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -34,7 +35,11 @@
       DTS:ObjectName="SQL_RLG_CRM_APP">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=RLG_CRM_APP;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=192.168.15.21;User ID=crmuserbi;Initial Catalog=RLG_CRM_APP;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;user=crmuserbi;">
+          <DTS:Password
+            DTS:Name="Pwd"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -44,7 +49,11 @@
       DTS:ObjectName="SQL_RLG_CRM_SYS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=.;Initial Catalog=RLG_CRM_SYS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=192.168.15.21;User ID=crmuserbi;Initial Catalog=RLG_CRM_SYS;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;user=crmuserbi;">
+          <DTS:Password
+            DTS:Name="Pwd"
+            Sensitive="1"></DTS:Password>
+        </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -116,7 +125,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20000101,20161231</DTS:VariableValue>
+        DTS:DataType="8">20160329,20160328</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -1532,7 +1541,7 @@ On a.ParentBookID = b.BookName</property>
           </components>
           <paths>
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output]"
               endId="Package\Data Flow Task\SCD DimBook.Inputs[Slowly Changing Dimension Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\DER AuditKey, UpdateDate.Outputs[Derived Column Output]" />
@@ -1542,7 +1551,7 @@ On a.ParentBookID = b.BookName</property>
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column 1.Outputs[Derived Column Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Derived Column Output]"
+              refId="Package\Data Flow Task.Paths[Derived Column Output2]"
               endId="Package\Data Flow Task\OLE DB Command.Inputs[OLE DB Command Input]"
               name="Derived Column Output"
               startId="Package\Data Flow Task\Derived Column.Outputs[Derived Column Output]" />
@@ -1567,7 +1576,7 @@ On a.ParentBookID = b.BookName</property>
               name="OLE DB Source Output"
               startId="Package\Data Flow Task\OLEDB_SRC CRM_SYS.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Data Flow Task.Paths[Row Count Output 12]"
+              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
               endId="Package\Data Flow Task\Union All.Inputs[Union All Input 1]"
               name="Row Count Output 1"
               startId="Package\Data Flow Task\RC RowInsert.Outputs[Row Count Output 1]" />
@@ -1577,7 +1586,7 @@ On a.ParentBookID = b.BookName</property>
               name="Row Count Output 1"
               startId="Package\Data Flow Task\RC RowSource.Outputs[Row Count Output 1]" />
             <path
-              refId="Package\Data Flow Task.Paths[Row Count Output 1]"
+              refId="Package\Data Flow Task.Paths[Row Count Output 12]"
               endId="Package\Data Flow Task\Union All.Inputs[Union All Input 3]"
               name="Row Count Output 1"
               startId="Package\Data Flow Task\RC RowUpdate.Outputs[Row Count Output 1]" />
@@ -2557,7 +2566,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output2]"
+          Id="Package\Data Flow Task.Paths[Derived Column Output]"
           TopLeft="234.5,251.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2605,7 +2614,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Derived Column Output]"
+          Id="Package\Data Flow Task.Paths[Derived Column Output2]"
           TopLeft="92.5,455.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2653,7 +2662,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Row Count Output 12]"
+          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
           TopLeft="329.5,555.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -2713,7 +2722,7 @@ Where a.EndDate IS NULL And b.EndDate IS NULL;</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Row Count Output 1]"
+          Id="Package\Data Flow Task.Paths[Row Count Output 12]"
           TopLeft="99.3333333333334,615.5">
           <EdgeLayout.Curve>
             <mssgle:Curve

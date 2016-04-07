@@ -12,8 +12,9 @@
   DTS:LocaleID="1054"
   DTS:ObjectName="MasterPackageFinance"
   DTS:PackageType="5"
-  DTS:VersionBuild="395"
-  DTS:VersionGUID="{E5C9D3B9-5CBE-4A60-81A1-94A84D9183C5}">
+  DTS:ProtectionLevel="0"
+  DTS:VersionBuild="397"
+  DTS:VersionGUID="{D8EA8AD8-DDD5-4CB2-9DCF-89DEC3A62097}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">6</DTS:Property>
   <DTS:ConnectionManagers>
@@ -7247,7 +7248,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="ETLCriteriaDate">
       <DTS:VariableValue
-        DTS:DataType="8">20150211,20160304</DTS:VariableValue>
+        DTS:DataType="8">20090101,20160329</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -7948,6 +7949,7 @@ Where Convert(varchar(8), a.LAST_UPDATE_DATE, 112) Between '20130101' And  '2013
       DTS:refId="Package\EXEC Package FactAR"
       DTS:CreationName="SSIS.ExecutePackageTask.3"
       DTS:Description="Execute Package Task"
+      DTS:Disabled="True"
       DTS:DTSID="{3adf83f4-5e63-4778-af86-5b244191eb37}"
       DTS:ExecutableType="SSIS.ExecutePackageTask.3"
       DTS:LocaleID="-1"
