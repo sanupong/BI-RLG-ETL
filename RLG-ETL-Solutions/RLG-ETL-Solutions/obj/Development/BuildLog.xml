@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>RLG-ETL-Solutions</Name>
-    <LastWriteTime>2016-04-06T18:05:34.7584514Z</LastWriteTime>
+    <LastWriteTime>2016-06-06T06:51:22.7173915Z</LastWriteTime>
     <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -138,7 +138,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>FactAR.dtsx</Name>
-      <LastWriteTime>2016-04-05T04:43:09.19353Z</LastWriteTime>
+      <LastWriteTime>2016-06-20T03:29:18.8090492Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -162,11 +162,6 @@
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>FactFinance.dtsx</Name>
-      <LastWriteTime>2016-04-06T17:22:27.255242Z</LastWriteTime>
-      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
-    </ProjectBuildItemInfo>
-    <ProjectBuildItemInfo>
       <Name>FactFinance 1.dtsx</Name>
       <LastWriteTime>2016-03-29T13:21:58.5038449Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
@@ -178,7 +173,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>MasterPackageFinance.dtsx</Name>
-      <LastWriteTime>2016-03-29T23:51:19.0092166Z</LastWriteTime>
+      <LastWriteTime>2016-05-18T13:08:18.4923441Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -192,8 +187,13 @@
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
-      <Name>FactFinance 3.dtsx</Name>
-      <LastWriteTime>2016-04-06T18:05:29.0922876Z</LastWriteTime>
+      <Name>FactFinanceAsOf160406.dtsx</Name>
+      <LastWriteTime>2016-04-06T18:09:49.0284243Z</LastWriteTime>
+      <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>FactFinance.dtsx</Name>
+      <LastWriteTime>2016-06-06T05:20:51.3798395Z</LastWriteTime>
       <LastKnownProtectionLevel>DontSaveSensitive</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
